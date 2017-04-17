@@ -9,7 +9,7 @@ const devtools: StoreEnhancer<Appstate> = window['devToolsExtension'] ? window['
 
 export function createAppStore(): Store<AppState> {
   return createStore<AppState>(
-    reducer,
+    rootReducer,
     compose(devtools)
   );
 }
