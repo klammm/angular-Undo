@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { createStore, Store, compose, StoreEnhancer, applyMiddleware } from 'redux';
+import { createStore, Store, compose, StoreEnhancer } from 'redux';
 
 import { AppState, default as rootReducer } from './app.reducer';
 
