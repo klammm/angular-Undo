@@ -3,7 +3,7 @@ import { Store } from 'redux';
 
 import { AppStore } from './app.store';
 import { AppState } from './app.reducer';
-// import { ChatExampleData } from './data/'
+
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,6 @@ import { AppState } from './app.reducer';
 })
 export class AppComponent {
   constructor(@Inject(AppStore) private store: Store<AppState>) {
-    // ChatExampleData(store);
+    
   }
 }
