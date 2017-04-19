@@ -1,6 +1,7 @@
 <div>
-  <ul>
+  <ul class='ExerciseList-list col-md-4 list-group'>
     <li
+    class='ExerciseList-listitem'
     *ngFor='let foobar of this.store.getState().list.currentList'
     [value]='foobar'> {{ foobar.name }}
     </li>

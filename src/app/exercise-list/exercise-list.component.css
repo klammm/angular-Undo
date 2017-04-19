@@ -1,0 +1,17 @@
+.ExerciseList-list {
+  list-style-type: none;
+  margin: auto;
+  padding: 20px;
+  background: #ff9999;
+}
+
+.ExerciseList-listitem {
+  padding: 5px;
+  background: #ffe5e5;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.ExerciseList-listitem:hover {
+  background-color: #ddd;
+}

@@ -13,13 +13,8 @@ const initialState: ListState = {
 
 export const ListReducer =
   function(state: ListState = initialState, action: Action): ListState {
-    const list: List = (<ListActions.SetCurrentListAction>action).list;
     const payload: List = (<ListActions.DoSearchAction>action).payload;
     switch (action.type) {
-      case "SET_CURRENT_LIST":
-        return {
-          currentList: list
-        };
       case 'DO_SEARCH':
         return {
           currentList: payload
