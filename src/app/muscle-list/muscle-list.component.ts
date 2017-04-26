@@ -12,6 +12,12 @@ import axios from 'axios';
 })
 export class MuscleListComponent implements OnInit {
 
+  // I wouild have liked to have seen an array of muscles here and then you use an ngFor in your
+  // html file to display that content.
+  // <button type='button' class='btn btn-default' (click)='handleListClicked($event.target.innerText)'>{{muscle.name}}</button>
+  // all those lines are the same. 👆🏾
+  // that would have required you use a model for the muscles.
+
   constructor(@Inject(AppStore) private store: Store<AppState>) {
   }
 
